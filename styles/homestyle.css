@@ -1,0 +1,114 @@
+/* Reset and basics */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #121212;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding-bottom: 80px; /* for nav bar */
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+}
+
+.app-title {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  color: #1DB954;
+}
+
+/* Search */
+.search-section {
+  width: 90%;
+  margin: 1rem 0;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+/* Main container */
+.container {
+  width: 90%;
+  max-width: 400px;
+}
+
+.section-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #FFFFFF;
+}
+
+/* Playlist grid */
+.playlist-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.playlist-card {
+  background-color: #1E1E1E;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  padding: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+.playlist-card:hover {
+  transform: scale(1.05);
+}
+
+.playlist-art {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.playlist-name {
+  margin-top: 0.5rem;
+  color: #B3B3B3;
+  font-size: 0.9rem;
+}
+
+/* Navigation bar */
+.nav-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #1E1E1E;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.7rem 0;
+}
+
+.nav-item {
+  color: #B3B3B3;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.nav-item.active,
+.nav-item:hover {
+  color: #1DB954;
+}

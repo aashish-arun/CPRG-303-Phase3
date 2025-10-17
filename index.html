@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Audiofied | Home</title>
+  <link rel="stylesheet" href="styles/homestyle.css" />
 </head>
 <body>
-  
+
+  <!-- Header -->
+  <header class="header">
+    <img src="assets/sonix_logo.png" alt="Audiofied Logo" class="logo">
+    <h1 class="app-title">Audiofied</h1>
+  </header>
+
+  <!-- Search bar -->
+  <section class="search-section">
+    <input type="text" placeholder="Search songs, artists, or albums..." class="search-input" />
+  </section>
+
+  <!-- Featured Playlists -->
+  <main class="container">
+    <h2 class="section-title">Featured Playlists</h2>
+
+    <div class="playlist-grid">
+      <div class="playlist-card">
+        <img src="assets/placeholder-art.jpg" alt="Chill Vibes" class="playlist-art" />
+        <p class="playlist-name">Chill Vibes</p>
+      </div>
+
+      <div class="playlist-card">
+        <img src="assets/placeholder-art.jpg" alt="Workout Mix" class="playlist-art" />
+        <p class="playlist-name">Workout Mix</p>
+      </div>
+
+      <div class="playlist-card">
+        <img src="assets/placeholder-art.jpg" alt="Top Hits" class="playlist-art" />
+        <p class="playlist-name">Top Hits</p>
+      </div>
+
+      <div class="playlist-card">
+        <img src="assets/placeholder-art.jpg" alt="Focus Beats" class="playlist-art" />
+        <p class="playlist-name">Focus Beats</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Bottom Navigation -->
+  <nav class="nav-bar">
+    <a href="index.html" class="nav-item active">🏠 Home</a>
+    <a href="library.html" class="nav-item">🎧 Library</a>
+    <a href="settings.html" class="nav-item">⚙️ Settings</a>
+    <a href="sign_out.html" class="nav-item">⏻ Sign Out</a>
+  </nav>
+
 </body>
 </html>
