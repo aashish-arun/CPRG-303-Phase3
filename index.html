@@ -3,55 +3,90 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Audiofied | Home</title>
+  <title>Sonix | Home</title>
   <link rel="stylesheet" href="styles/homestyle.css" />
 </head>
 <body>
 
   <!-- Header -->
   <header class="header">
-    <img src="assets/sonix_logo_dark.png" alt="Audiofied Logo" class="logo">
-    <h1 class="app-title">Audiofied</h1>
+    <img src="assets/sonix_logo_dark.png" alt="Sonix Logo" class="logo">
+    <h1 class="app-title">Sonix</h1>
   </header>
 
   <!-- Search bar -->
   <section class="search-section">
+    <h2 class="section-title">Explore</h2>
     <input type="text" placeholder="Search songs, artists, or albums..." class="search-input" />
+  </section>
+
+    <!-- Weekly Progress Section -->
+  <section class="weekly-progress">
+    <h2 class="section-title">Weekly Progress</h2>
+    <p>You have completed 2 out of 3 challenges this week!</p>
+    <div class="progress-bar">
+      <div class="progress-fill" style="width: 66%;"></div>
+    </div>
   </section>
 
   <!-- Featured Playlists -->
   <main class="container">
-    <h2 class="section-title">Featured Playlists</h2>
+    <h2 class="section-title">Songs for You</h2>
 
     <div class="playlist-grid">
       <div class="playlist-card">
-        <img src="assets/placeholder-art.jpg" alt="Chill Vibes" class="playlist-art" />
+        <img src="../assets/playlist-art.png" alt="Song 1" class="playlist-art" />
+        <p class="playlist-name">Song 1</p>
+      </div>
+
+      <div class="playlist-card">
+        <img src="../assets/playlist-art.png" alt="Song 2" class="playlist-art" />
+        <p class="playlist-name">Song 2</p>
+      </div>
+
+      <div class="playlist-card">
+        <img src="../assets/playlist-art.png" alt="Song 3" class="playlist-art" />
+        <p class="playlist-name">Song 3</p>
+      </div>
+
+      <div class="playlist-card">
+        <img src="../assets/playlist-art.png"" alt="Song 4" class="playlist-art" />
+        <p class="playlist-name">Song 4</p>
+      </div>
+    </div>
+
+    <h2 class="section-title">Playlists You'll Love</h2>
+
+    <div class="playlist-grid">
+      <div class="playlist-card">
+        <img src="../assets/playlist-art.png" alt="Chill Vibes" class="playlist-art" />
         <p class="playlist-name">Chill Vibes</p>
       </div>
 
       <div class="playlist-card">
-        <img src="assets/placeholder-art.jpg" alt="Workout Mix" class="playlist-art" />
+        <img src="../assets/playlist-art.png" alt="Workout Mix" class="playlist-art" />
         <p class="playlist-name">Workout Mix</p>
       </div>
 
       <div class="playlist-card">
-        <img src="assets/placeholder-art.jpg" alt="Top Hits" class="playlist-art" />
+        <img src="../assets/playlist-art.png" alt="Top Hits" class="playlist-art" />
         <p class="playlist-name">Top Hits</p>
       </div>
 
       <div class="playlist-card">
-        <img src="assets/placeholder-art.jpg" alt="Focus Beats" class="playlist-art" />
+        <img src="../assets/playlist-art.png" alt="Focus Beats" class="playlist-art" />
         <p class="playlist-name">Focus Beats</p>
       </div>
     </div>
+
   </main>
 
   <!-- Bottom Navigation -->
   <nav class="nav-bar">
-    <a href="index.html" class="nav-item active">🏠 Home</a>
-    <a href="library.html" class="nav-item">🎧 Library</a>
-    <a href="settings.html" class="nav-item">⚙️ Settings</a>
-    <a href="sign_out.html" class="nav-item">⏻ Sign Out</a>
+    <a href="../index.html" class="nav-item active">🏠 Home</a>
+    <a href="pages/library.html" class="nav-item">🎧 Library</a>
+    <a href="pages/challenges.html" class="nav-item">🏆 Challenges</a>
+    <a href="pages/login.html" class="nav-item">⏻ Sign Out</a>
   </nav>
 
 </body>

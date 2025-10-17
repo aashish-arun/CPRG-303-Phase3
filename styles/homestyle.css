@@ -1,4 +1,6 @@
-/* Reset and basics */
+/* ===========================
+   RESET & BASE STYLES
+=========================== */
 * {
   margin: 0;
   padding: 0;
@@ -13,30 +15,37 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  padding-bottom: 80px; /* for nav bar */
+  padding-bottom: 80px;
 }
 
-/* Header */
+/* ===========================
+   HEADER
+=========================== */
 .header {
-  text-align: center;
-  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  margin: 0.7rem 0 0.7rem 0;
 }
 
 .logo {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
 }
 
 .app-title {
-  font-size: 1.5rem;
-  margin-top: 0.5rem;
-  color: #1DB954;
+  font-size: 2rem;
+  color: #ff1d80;
+  margin: 0;
 }
 
-/* Search */
+/* ===========================
+   SEARCH SECTION
+=========================== */
 .search-section {
   width: 90%;
-  margin: 1rem 0;
+  max-width: 400px;
 }
 
 .search-input {
@@ -48,7 +57,9 @@ body {
   font-size: 1rem;
 }
 
-/* Main container */
+/* ===========================
+   MAIN CONTENT LAYOUT
+=========================== */
 .container {
   width: 90%;
   max-width: 400px;
@@ -60,11 +71,14 @@ body {
   color: #FFFFFF;
 }
 
-/* Playlist grid */
+/* ===========================
+   PLAYLIST GRID
+=========================== */
 .playlist-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .playlist-card {
@@ -74,10 +88,6 @@ body {
   text-align: center;
   padding: 0.5rem;
   transition: transform 0.2s ease;
-}
-
-.playlist-card:hover {
-  transform: scale(1.05);
 }
 
 .playlist-art {
@@ -91,7 +101,277 @@ body {
   font-size: 0.9rem;
 }
 
-/* Navigation bar */
+/* ===========================
+   WEEKLY PROGRESS
+=========================== */
+.weekly-progress {
+  width: 90%;
+  max-width: 400px;
+  background-color: #1E1E1E;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.weekly-progress p {
+  margin-bottom: 0.5rem;
+  color: #B3B3B3;
+  font-size: 0.95rem;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background-color: #2A2A2A;
+  border-radius: 6px;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #ff1d80;
+  border-radius: 6px;
+  transition: width 0.3s ease;
+}
+
+/* ===========================
+   USER BADGE COLLECTION
+=========================== */
+.badge-summary-card {
+  background-color: #1E1E1E;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem 0;
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.badge-info {
+  color: #B3B3B3;
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+}
+
+.badge-info p {
+  margin-bottom: 0.3rem;
+}
+
+.badge-types {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  justify-content: center; /* centers badges */
+}
+
+.badge-card {
+  background-color: #2A2A2A;
+  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  position: relative;
+  color: #ffffff;
+}
+
+.badge-count {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  font-size: 0.8rem;
+  background-color: #ff1d80;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+/* ===========================
+   USER PROFILE SUMMARY
+=========================== */
+.profile-card {
+  background-color: #1E1E1E;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.profile-info-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.profile-pic {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-info {
+  text-align: left;
+}
+
+.profile-info p {
+  color: #B3B3B3;
+  margin: 0.2rem 0;
+  font-size: 0.95rem;
+}
+
+/* ===========================
+   LEADERBOARD
+=========================== */
+.leaderboard-filters {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.filter-btn {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #2A2A2A;
+  color: #B3B3B3;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.filter-btn.active {
+  background-color: #ff1d80;
+  color: #FFFFFF;
+}
+
+.leaderboard-list {
+  list-style: none;
+  color: #B3B3B3;
+  font-size: 0.95rem;
+}
+
+.leaderboard-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #2A2A2A;
+}
+
+/* ===========================
+   WEEKLY CHALLENGES
+=========================== */
+.weekly-challenges .challenge-card {
+  background-color: #1E1E1E;
+  border-radius: 10px;
+  padding: 0.8rem;
+  margin-bottom: 0.8rem;
+  text-align: left;
+}
+
+.weekly-challenges .challenge-card p {
+  color: #B3B3B3;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.badge-earned {
+  display: inline-block;
+  margin-top: 0.3rem;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.badge-collection {
+  margin: 1rem 0 1rem 0;
+  text-align: center;
+}
+
+.view-badges-link {
+  display: inline-block;
+  background-color: #ff1d80;
+  color: #FFFFFF;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ===========================
+   FORM SECTION
+=========================== */
+.login-form-section {
+  background-color: #1E1E1E;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #FFFFFF;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.login-input {
+  padding: 0.7rem;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background-color: #2A2A2A;
+  color: #FFFFFF;
+}
+
+.login-input::placeholder {
+  color: #B3B3B3;
+}
+
+.login-btn {
+  padding: 0.7rem;
+  border-radius: 25px;
+  border: none;
+  background-color: #ff1d80;
+  color: #FFFFFF;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.login-btn:hover {
+  opacity: 0.9;
+}
+
+.signup-text {
+  margin-top: 1rem;
+  color: #B3B3B3;
+  font-size: 0.95rem;
+}
+
+.signup-text a {
+  color: #ff1d80;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ===========================
+   NAVIGATION BAR
+=========================== */
 .nav-bar {
   position: fixed;
   bottom: 0;
@@ -110,5 +390,5 @@ body {
 
 .nav-item.active,
 .nav-item:hover {
-  color: #1DB954;
+  color: #fec526;
 }
